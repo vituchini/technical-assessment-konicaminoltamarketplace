@@ -1,12 +1,10 @@
 import { App, Payload } from "./types";
-
-declare const app: any;
+import { requestHandler } from "./controllers/requestController";
 
 const start = (app: App): void => {
-  console.log("START");
   app.ports.request.subscribe((message: string) => {
     const payload: Payload = JSON.parse(message);
-    console.log(payload);
+    requestHandler(payload);
   });
 };
 

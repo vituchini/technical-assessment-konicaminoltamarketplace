@@ -1,16 +1,16 @@
 import { RequestMessages, ResponseMessages } from "../constans";
 
-type Point = {
+export type Point = {
   x: number;
   y: number;
 };
 
-type Line = {
+export type Line = {
   start: Point | null;
   end: Point;
 };
 
-type StateUpdate = {
+export type StateUpdate = {
   newLine: Line | null;
   heading: string | null;
   message: string | null;
