@@ -1,5 +1,9 @@
 import { RequestMessages, ResponseMessages } from "../constans";
 
+export interface Player {
+  name: string;
+}
+
 export type Point = {
   x: number;
   y: number;

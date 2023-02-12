@@ -1,5 +1,5 @@
 import { App, Payload } from "./types";
-import { requestHandler } from "./controllers/requestController";
+import { requestHandler } from "./controllers/request";
 
 const start = (app: App): void => {
   app.ports.request.subscribe((message: string) => {
